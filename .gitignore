@@ -21,7 +21,9 @@
 */*.egg
 
 */db.sqlite3
-*/settings.py
+**/settings.py
+settings.py
+
 
 # Installer logs
 */pip-log.txt
