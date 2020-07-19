@@ -6,8 +6,10 @@
 <p>My number is: {{my_number}}</p>
 
 <ul>
-  {% for my_sub_item in my_list %}
+  {% for my_sub_item in my_list %} {% if my_sub_item == 2 %}
+  <li>{{ forloop.counter }} : {{ my_sub_item|add:100 }}</li>
+  {% else %}
   <li>{{ forloop.counter }} : {{ my_sub_item }}</li>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </ul>
 {% endblock %}
