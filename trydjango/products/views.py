@@ -20,7 +20,7 @@ def product_create_view(request):
 
 def product_create_view_raw(request):
     form = RawProductForm()
-    if (request.method == "POST")
+    if (request.method == "POST"):
         my_form = RawProductForm(request.POST)
         if my_form.is_valid():
             Product.objects.create(**my_form.cleaned_data)
